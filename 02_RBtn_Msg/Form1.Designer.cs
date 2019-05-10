@@ -28,13 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.gpOption1 = new System.Windows.Forms.GroupBox();
+            this.rbYesNo = new System.Windows.Forms.RadioButton();
+            this.rbOkCancel = new System.Windows.Forms.RadioButton();
+            this.rbOk = new System.Windows.Forms.RadioButton();
+            this.gpOption2 = new System.Windows.Forms.GroupBox();
+            this.rbQuestion = new System.Windows.Forms.RadioButton();
+            this.rbInformation = new System.Windows.Forms.RadioButton();
+            this.rbError = new System.Windows.Forms.RadioButton();
+            this.btnShow = new System.Windows.Forms.Button();
+            this.gpOption1.SuspendLayout();
+            this.gpOption2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // gpOption1
+            // 
+            this.gpOption1.Controls.Add(this.rbYesNo);
+            this.gpOption1.Controls.Add(this.rbOkCancel);
+            this.gpOption1.Controls.Add(this.rbOk);
+            this.gpOption1.Location = new System.Drawing.Point(12, 16);
+            this.gpOption1.Name = "gpOption1";
+            this.gpOption1.Size = new System.Drawing.Size(143, 127);
+            this.gpOption1.TabIndex = 0;
+            this.gpOption1.TabStop = false;
+            this.gpOption1.Text = "Type";
+            // 
+            // rbYesNo
+            // 
+            this.rbYesNo.AutoSize = true;
+            this.rbYesNo.Location = new System.Drawing.Point(6, 87);
+            this.rbYesNo.Name = "rbYesNo";
+            this.rbYesNo.Size = new System.Drawing.Size(64, 21);
+            this.rbYesNo.TabIndex = 2;
+            this.rbYesNo.TabStop = true;
+            this.rbYesNo.Text = "YesNo";
+            this.rbYesNo.UseVisualStyleBackColor = true;
+            // 
+            // rbOkCancel
+            // 
+            this.rbOkCancel.AutoSize = true;
+            this.rbOkCancel.Location = new System.Drawing.Point(7, 57);
+            this.rbOkCancel.Name = "rbOkCancel";
+            this.rbOkCancel.Size = new System.Drawing.Size(83, 21);
+            this.rbOkCancel.TabIndex = 1;
+            this.rbOkCancel.TabStop = true;
+            this.rbOkCancel.Text = "OkCancel";
+            this.rbOkCancel.UseVisualStyleBackColor = true;
+            // 
+            // rbOk
+            // 
+            this.rbOk.AutoSize = true;
+            this.rbOk.Location = new System.Drawing.Point(7, 27);
+            this.rbOk.Name = "rbOk";
+            this.rbOk.Size = new System.Drawing.Size(43, 21);
+            this.rbOk.TabIndex = 0;
+            this.rbOk.TabStop = true;
+            this.rbOk.Text = "Ok";
+            this.rbOk.UseVisualStyleBackColor = true;
+            // 
+            // gpOption2
+            // 
+            this.gpOption2.Controls.Add(this.rbQuestion);
+            this.gpOption2.Controls.Add(this.rbInformation);
+            this.gpOption2.Controls.Add(this.rbError);
+            this.gpOption2.Location = new System.Drawing.Point(165, 16);
+            this.gpOption2.Name = "gpOption2";
+            this.gpOption2.Size = new System.Drawing.Size(143, 127);
+            this.gpOption2.TabIndex = 1;
+            this.gpOption2.TabStop = false;
+            this.gpOption2.Text = "Icon";
+            // 
+            // rbQuestion
+            // 
+            this.rbQuestion.AutoSize = true;
+            this.rbQuestion.Location = new System.Drawing.Point(6, 87);
+            this.rbQuestion.Name = "rbQuestion";
+            this.rbQuestion.Size = new System.Drawing.Size(80, 21);
+            this.rbQuestion.TabIndex = 5;
+            this.rbQuestion.TabStop = true;
+            this.rbQuestion.Text = "Question";
+            this.rbQuestion.UseVisualStyleBackColor = true;
+            // 
+            // rbInformation
+            // 
+            this.rbInformation.AutoSize = true;
+            this.rbInformation.Location = new System.Drawing.Point(6, 57);
+            this.rbInformation.Name = "rbInformation";
+            this.rbInformation.Size = new System.Drawing.Size(97, 21);
+            this.rbInformation.TabIndex = 4;
+            this.rbInformation.TabStop = true;
+            this.rbInformation.Text = "Information";
+            this.rbInformation.UseVisualStyleBackColor = true;
+            // 
+            // rbError
+            // 
+            this.rbError.AutoSize = true;
+            this.rbError.Location = new System.Drawing.Point(6, 26);
+            this.rbError.Name = "rbError";
+            this.rbError.Size = new System.Drawing.Size(57, 21);
+            this.rbError.TabIndex = 3;
+            this.rbError.TabStop = true;
+            this.rbError.Text = "Error";
+            this.rbError.UseVisualStyleBackColor = true;
+            // 
+            // btnShow
+            // 
+            this.btnShow.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnShow.Location = new System.Drawing.Point(12, 151);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(296, 96);
+            this.btnShow.TabIndex = 2;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(320, 264);
+            this.Controls.Add(this.btnShow);
+            this.Controls.Add(this.gpOption2);
+            this.Controls.Add(this.gpOption1);
+            this.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.Text = "메시지 박스 보기";
+            this.gpOption1.ResumeLayout(false);
+            this.gpOption1.PerformLayout();
+            this.gpOption2.ResumeLayout(false);
+            this.gpOption2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox gpOption1;
+        private System.Windows.Forms.RadioButton rbYesNo;
+        private System.Windows.Forms.RadioButton rbOkCancel;
+        private System.Windows.Forms.RadioButton rbOk;
+        private System.Windows.Forms.GroupBox gpOption2;
+        private System.Windows.Forms.RadioButton rbQuestion;
+        private System.Windows.Forms.RadioButton rbInformation;
+        private System.Windows.Forms.RadioButton rbError;
+        private System.Windows.Forms.Button btnShow;
     }
 }
 
